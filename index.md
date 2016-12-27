@@ -15,6 +15,7 @@ Policy Gradient的出现是因为Deep Learning的出现，否则，怎么会有�
 
 # [代码解读](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5)
 * observation 代码，`prepro(I)`函数中，做了一些剔除背景的操作。
+
 ```javascript
 def prepro(I):
     """ prepro 210x160x3 uint8 frame into 6400 (80x80) 1D float vector """
@@ -26,6 +27,7 @@ def prepro(I):
     return I.astype(np.float).ravel()
 ```
 * 计算discount_reward代码，其中对于`[0,0,0,1]`这样的得分数组，如果设`gamma = 0.9`，那么得到打折后的得分是`[0.729,0.81,0.9,1]`这样的打折分数：
+
 ```javascript
 def discount_rewards(r):
   """ take 1D float array of rewards and compute discounted reward """
@@ -40,10 +42,11 @@ def discount_rewards(r):
 * `Policy Forward` 和 `Policy Backward`算法，就是普通的foward 和 BP算法。例如backward中的`dW2 = np.dot(eph.T, epdlogp).ravel()`就是使用了链式法则去求Gradient。
 * 下面一段是Open AI Gym的一些配置，只要知道`render`是gym中是否显示图像的开关，如果在服务器上训练，请关掉。
 * 下面代码是整个文章的核心，首先声明一点，在原文章代码中它只考虑action= 2 or 3的两种情况（上或者下），也就是没有考虑1，也就是停止的情况。因此在计算Gradient的时候，你会发现它使用的Gradient方向是`y-aprob`，为什么如此，因为我们可以看一下整个aprob计算，它是通过sigmoid函数计算出概率值aprob。因此，我们就是计算 ylog(aprob) + (1-y)log(1-aprob)的倒数值，又 aprob = σ(x)，所以结果是`y-aprob`，[具体可以看一下logloss的gradient推倒方法](http://cs231n.github.io/neural-networks-2/#losses)
+
 ```javascript
 while True:
   if render: env.render()
-
+  
   # preprocess the observation, set input to network to be difference image
   cur_x = prepro(observation)
   x = cur_x - prev_x if prev_x is not None else np.zeros(D)
@@ -66,6 +69,7 @@ while True:
   drs.append(reward) 
 ```
 * 最后其实就是如何存储Gradient以及如何计算batch Gradient的方法，大家可以依据很多深度学习资料比对一下，至于running_reward的公式的原理，大家可以看看Deep Reinforcement Learning的书籍。
+
 ```javascript
     if episode_number % batch_size == 0:
       for k,v in model.iteritems():
@@ -80,6 +84,7 @@ while True:
 
 # Policy Gradient in Pong Game with Tensorflow
 这段代码是我根据网上一个人的代码改写的，他写的代码虽然说是Policy Gradient，但实际只用了L2的loss，其实是错误的。
+
 ```javascript
 import numpy as np
 import gym
