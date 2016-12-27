@@ -81,6 +81,7 @@ while True:
 # Policy Gradient in Pong Game with Tensorflow
 这段代码是我根据网上一个人的代码改写的，他写的代码虽然说是Policy Gradient，但实际只用了L2的loss，其实是错误的。
 ```javascript
+import numpy as np
 import gym
 import tensorflow as tf
 
@@ -157,7 +158,7 @@ tf.initialize_all_variables().run()
 
 # try load saved model
 saver = tf.train.Saver(tf.all_variables())
-load_was_success = True 
+load_was_success = True # yes, I'm being optimistic
 try:
     save_dir = '/'.join(save_path.split('/')[:-1])
     ckpt = tf.train.get_checkpoint_state(save_dir)
