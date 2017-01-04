@@ -11,6 +11,7 @@ tags:
 ---
 
 > “我听过两个关于罗曼蒂克的故事，一个发生在上海，另一个也发生在上海。”
+
 ## 什么是Deep Reinforcement Learning ？
 Deep Reinforce Learning可以从下面几个资料中获得，
 * [Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto](https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html)，这本书可以说是整个Reinforcement Learning最权威的书籍，尤其第二版加入了很多关于Deep的东西。
