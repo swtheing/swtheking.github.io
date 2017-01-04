@@ -4,7 +4,7 @@ title:      "Policy Gradient in Pong Game"
 subtitle:   " \"This is a swift and cool tool in Deep Learning\""
 date:       2017-01-01 12:00:00
 author:     "S&W"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/Deep.jpg"
 catalog: true
 tags:
     - Deep Reinforcement Learning

@@ -5,23 +5,24 @@
     <description>一个关乎于深度学习的故事，一颗期许罗曼蒂克的内心，一位篮球界的地板流选手，一名非专业的脱口秀演员</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 03 Jan 2017 17:01:40 +0800</pubDate>
-    <lastBuildDate>Tue, 03 Jan 2017 17:01:40 +0800</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 10:04:37 +0800</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 10:04:37 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Policy Gradient in Pong Game</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;“我听过两个关于罗曼蒂克的故事，一个发生在上海，另一个也发生在上海。”&lt;/p&gt;
-  &lt;h2 id=&quot;什么是deep-reinforcement-learning-&quot;&gt;什么是Deep Reinforcement Learning ？&lt;/h2&gt;
-  &lt;p&gt;Deep Reinforce Learning可以从下面几个资料中获得，&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html&quot;&gt;Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto&lt;/a&gt;，这本书可以说是整个Reinforcement Learning最权威的书籍，尤其第二版加入了很多关于Deep的东西。&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf&quot;&gt;Deep Reinforcement Learning. David Silver, Google DeepMind&lt;/a&gt;，这是DeepMind一个ppt主要讲的是Deep Q-Network。&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html&quot;&gt;UCL的一个关于Deep Reinforcement Learning的课程&lt;/a&gt;。&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://karpathy.github.io/2016/05/31/rl/&quot;&gt;Policy Gradient Tutoiral&lt;/a&gt;，本文的代码以及解释来源于此。&lt;/li&gt;
-  &lt;/ul&gt;
 &lt;/blockquote&gt;
+
+&lt;h2 id=&quot;什么是deep-reinforcement-learning-&quot;&gt;什么是Deep Reinforcement Learning ？&lt;/h2&gt;
+&lt;p&gt;Deep Reinforce Learning可以从下面几个资料中获得，&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html&quot;&gt;Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto&lt;/a&gt;，这本书可以说是整个Reinforcement Learning最权威的书籍，尤其第二版加入了很多关于Deep的东西。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf&quot;&gt;Deep Reinforcement Learning. David Silver, Google DeepMind&lt;/a&gt;，这是DeepMind一个ppt主要讲的是Deep Q-Network。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html&quot;&gt;UCL的一个关于Deep Reinforcement Learning的课程&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://karpathy.github.io/2016/05/31/rl/&quot;&gt;Policy Gradient Tutoiral&lt;/a&gt;，本文的代码以及解释来源于此。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;policy-gradient&quot;&gt;Policy Gradient&lt;/h2&gt;
 &lt;h3 id=&quot;what-is-policy-gradient&quot;&gt;what is policy gradient&lt;/h3&gt;
