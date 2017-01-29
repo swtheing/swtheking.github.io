@@ -13,6 +13,7 @@ tags:
 > “我听过两个关于罗曼蒂克的故事，一个发生在上海，另一个也发生在上海。”
 
 ## Deep Reinforcement Learning
+
 Deep Reinforce Learning可以从下面几个资料中获得，
 * [Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto](https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html)，这本书可以说是整个Reinforcement Learning最权威的书籍，尤其第二版加入了很多关于Deep的东西。
 * [Deep Reinforcement Learning. David Silver, Google DeepMind](http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf)，这是DeepMind一个ppt主要讲的是Deep Q-Network。
@@ -20,14 +21,21 @@ Deep Reinforce Learning可以从下面几个资料中获得，
 * [Policy Gradient Tutoiral](http://karpathy.github.io/2016/05/31/rl/)，本文的代码以及解释来源于此。
 
 ## Policy Gradient
+
 ### what is policy gradient
+
 在笔者看来，Policy Gradient是对于一个Policy的求导，也就是对于一个映射函数（state -> action）的求导。
+
 ### why policy gradient
+
 Policy Gradient的出现是因为Deep Learning的出现，否则，怎么会有人想到为一个Policy函数求Gradient呢。相比于Deep Q-learning，Policy Gradient更容易实现，也更容易做BP，如果想了解细节，请看[Policy Gradient Tutoiral](http://karpathy.github.io/2016/05/31/rl/)。
+
 ### Loss of Policy Gradient
+
 其实Policy Gradient的Loss是Log Loss，也就是Cross Entropy，但是有一个trick的地方是，Cross Entropy计算出的gradient的只是一个方向，它的值需要再乘以discount reward，具体数学可以看[Policy Gradient Tutoiral](http://karpathy.github.io/2016/05/31/rl/)，代码部分解释可以看下面。
 
 ## [代码解读](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5)
+
 * observation 代码，`prepro(I)`函数中，做了一些剔除背景的操作。
 
 ```javascript
@@ -97,6 +105,7 @@ while True:
 ```
 
 ## Policy Gradient in Pong Game with Tensorflow
+
 这段代码是我根据网上一个人的代码改写的，他写的代码虽然说是Policy Gradient，但实际只用了L2的loss，其实是错误的。
 
 ```javascript
