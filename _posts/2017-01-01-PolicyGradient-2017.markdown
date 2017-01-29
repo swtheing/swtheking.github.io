@@ -15,9 +15,13 @@ tags:
 ## Deep Reinforcement Learning
 
 Deep Reinforce Learning可以从下面几个资料中获得，
+
 * [Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto](https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html)，这本书可以说是整个Reinforcement Learning最权威的书籍，尤其第二版加入了很多关于Deep的东西。
+
 * [Deep Reinforcement Learning. David Silver, Google DeepMind](http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf)，这是DeepMind一个ppt主要讲的是Deep Q-Network。
+
 * [UCL的一个关于Deep Reinforcement Learning的课程](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)。
+
 * [Policy Gradient Tutoiral](http://karpathy.github.io/2016/05/31/rl/)，本文的代码以及解释来源于此。
 
 ## Policy Gradient
