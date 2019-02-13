@@ -1,21 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @swtheing Sign out
-119
-3,844 2,773 Huxpro/huxpro.github.io
- Code  Issues 50  Pull requests 12  Projects 0  Wiki  Insights
-huxpro.github.io/_config.yml
-ff66f4a  on 25 Sep 2018
-@Huxpro Huxpro [v1.8] brand new archive and tag
-@Huxpro @yzgyyang @rpsh @Voleking @Sundrops @LucasIcarus @Kaijun
-     
-140 lines (105 sloc)  3.72 KB
 # Site settings
 title: Hux Blog
 SEOTitle: 黄玄的博客 | Hux Blog
@@ -121,16 +103,3 @@ page-mathjax: false
 # Friends
 friends: [
 ]
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
